@@ -9,8 +9,9 @@
 [node name="WorldBackground" type="Node2D" unique_id=988546192]
 
 [node name="Sky" type="Parallax2D" parent="." unique_id=669977245]
+scale = Vector2(1.0237882, 1.3469192)
 scroll_scale = Vector2(0, 0)
-scroll_offset = Vector2(-329, 2)
+scroll_offset = Vector2(-333.99997, -4)
 repeat_size = Vector2(336, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Sky" unique_id=2119020341]
@@ -58,12 +59,13 @@ region_rect = Rect2(0, 0, 1008, 192)
 
 [node name="Water" type="Parallax2D" parent="." unique_id=1629873480]
 scroll_scale = Vector2(0.8, 0)
-scroll_offset = Vector2(-5, -3)
+scroll_offset = Vector2(-52, -5)
 repeat_size = Vector2(336, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Water" unique_id=2006498845]
 texture_repeat = 2
-position = Vector2(18, 150)
+position = Vector2(-7, 138)
+scale = Vector2(0.9993896, 1.4036772)
 texture = ExtResource("5_8es7g")
 region_enabled = true
 region_rect = Rect2(0, 0, 1008, 192)
