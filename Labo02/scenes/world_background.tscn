@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://c6u3exqsmnf7b"]
+
+[ext_resource type="Texture2D" uid="uid://8klw7bg4c4h6" path="res://assets/sprites/Legacy-Fantasy-VL.3 - Purple Bay/Background/ciel.png" id="1_0bshv"]
+[ext_resource type="Texture2D" uid="uid://d0fiqkx6chrgf" path="res://assets/sprites/Legacy-Fantasy-VL.3 - Purple Bay/Background/nuage.png" id="2_s1sj3"]
+[ext_resource type="Texture2D" uid="uid://dw2q0g0kinn7v" path="res://assets/sprites/Legacy-Fantasy-VL.3 - Purple Bay/Background/montagne2.png" id="3_lie8y"]
+[ext_resource type="Texture2D" uid="uid://c3mevdknnf88q" path="res://assets/sprites/Legacy-Fantasy-VL.3 - Purple Bay/Background/montagne1.png" id="4_2lgno"]
+[ext_resource type="Texture2D" uid="uid://sho3bf37iysa" path="res://assets/sprites/Legacy-Fantasy-VL.3 - Purple Bay/Background/eau.png" id="5_8es7g"]
+
+[node name="WorldBackground" type="Node2D" unique_id=988546192]
+
+[node name="Sky" type="Parallax2D" parent="." unique_id=669977245]
+scroll_scale = Vector2(0, 0)
+scroll_offset = Vector2(-329, 2)
+repeat_size = Vector2(336, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sky" unique_id=2119020341]
+texture_repeat = 2
+position = Vector2(4, 94)
+texture = ExtResource("1_0bshv")
+region_enabled = true
+region_rect = Rect2(0, 0, 1008, 192)
+
+[node name="Cloud" type="Parallax2D" parent="." unique_id=260378147]
+scroll_scale = Vector2(0.1, 0)
+repeat_size = Vector2(336, 0)
+autoscroll = Vector2(5, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Cloud" unique_id=1527033134]
+texture_repeat = 2
+position = Vector2(24, 101)
+texture = ExtResource("2_s1sj3")
+region_enabled = true
+region_rect = Rect2(0, 0, 1008, 192)
+
+[node name="Montain02" type="Parallax2D" parent="." unique_id=2120612164]
+scroll_scale = Vector2(0.1, 0)
+scroll_offset = Vector2(-357, -1)
+repeat_size = Vector2(336, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Montain02" unique_id=880973935]
+texture_repeat = 2
+position = Vector2(18, 137)
+texture = ExtResource("3_lie8y")
+region_enabled = true
+region_rect = Rect2(0, 0, 1008, 192)
+
+[node name="Montain01" type="Parallax2D" parent="." unique_id=1535542931]
+scroll_scale = Vector2(0.3, 0)
+scroll_offset = Vector2(-13, 22)
+repeat_size = Vector2(336, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Montain01" unique_id=148757652]
+texture_repeat = 2
+position = Vector2(-17, 161)
+texture = ExtResource("4_2lgno")
+region_enabled = true
+region_rect = Rect2(0, 0, 1008, 192)
+
+[node name="Water" type="Parallax2D" parent="." unique_id=1629873480]
+scroll_scale = Vector2(0.8, 0)
+scroll_offset = Vector2(-5, -3)
+repeat_size = Vector2(336, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Water" unique_id=2006498845]
+texture_repeat = 2
+position = Vector2(18, 150)
+texture = ExtResource("5_8es7g")
+region_enabled = true
+region_rect = Rect2(0, 0, 1008, 192)
