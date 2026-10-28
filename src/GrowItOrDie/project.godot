@@ -17,7 +17,7 @@ config/icon="res://assets/icon.svg"
 
 [autoload]
 
-DebugOverlay="*uid://bbwljxbdrhgbs"
+DebugOverlay="*uid://b21k5whbv32re"
 
 [input]
 
