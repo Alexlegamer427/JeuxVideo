@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuu10y8mawvxx"
-path="res://.godot/imported/AllTools - SnowHex.png-1b78fd905994d9026b34ea3228dca41e.ctex"
+uid="uid://do8q07m884ern"
+path="res://.godot/imported/Cavebound Adventurer_ Racing Against Time.png-0d50b87626399fa22ed93573009d1ac0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprite/All tools mini-pack by SnowHex/AllTools - SnowHex.png"
-dest_files=["res://.godot/imported/AllTools - SnowHex.png-1b78fd905994d9026b34ea3228dca41e.ctex"]
+source_file="res://assets/sprite/menus/Cavebound Adventurer_ Racing Against Time.png"
+dest_files=["res://.godot/imported/Cavebound Adventurer_ Racing Against Time.png-0d50b87626399fa22ed93573009d1ac0.ctex"]
 
 [params]
 

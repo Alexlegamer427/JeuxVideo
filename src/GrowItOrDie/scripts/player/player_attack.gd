@@ -4,7 +4,7 @@ extends BaseState
 @export var player : Player
 
 func enter() -> void:
-	player.velocity = Vector2.ZERO   # le joueur s'arrête pendant le coup
+	player.velocity = Vector2.ZERO   
 	player.play_anim("attack")
 	player.get_animation_player().animation_finished.connect(_on_finished, CONNECT_ONE_SHOT)
 

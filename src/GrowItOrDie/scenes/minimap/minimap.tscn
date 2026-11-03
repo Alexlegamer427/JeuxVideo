@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://ynxa866wfqk2"]
+
+[ext_resource type="Script" uid="uid://dow5ixmh2lb31" path="res://scripts/minimap/minimap_container.gd" id="1_mjkw1"]
+
+[node name="MinimapContainer" type="CanvasLayer" unique_id=2126477531]
+script = ExtResource("1_mjkw1")
+
+[node name="MinimapPanel" type="PanelContainer" parent="." unique_id=1908467492]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -252.0
+offset_top = 19.0
+offset_right = 260.0
+offset_bottom = 531.0
+grow_horizontal = 0
+scale = Vector2(0.43322608, 0.4234428)
+
+[node name="MinimapContainer" type="SubViewportContainer" parent="MinimapPanel" unique_id=1594624814]
+layout_mode = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="MinimapPanel/MinimapContainer" unique_id=1064791131]
+unique_name_in_owner = true
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Minimap" type="Node2D" parent="MinimapPanel/MinimapContainer/SubViewport" unique_id=682351470]
+
+[node name="MinimapTile" type="TileMapLayer" parent="MinimapPanel/MinimapContainer/SubViewport/Minimap" unique_id=1908434798]
+unique_name_in_owner = true
+
+[node name="MiniCam" type="Camera2D" parent="MinimapPanel/MinimapContainer/SubViewport/Minimap" unique_id=1943364925]
+unique_name_in_owner = true
+
+[node name="TextureRect" type="TextureRect" parent="MinimapPanel" unique_id=1635494581]
+layout_mode = 2
+
+[node name="MiniPlayerSprite" type="Sprite2D" parent="MinimapPanel" unique_id=2098763473]

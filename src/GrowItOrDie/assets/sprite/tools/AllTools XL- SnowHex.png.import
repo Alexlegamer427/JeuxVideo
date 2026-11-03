@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1eri7q07jy0l"
-path="res://.godot/imported/AllTools XL- SnowHex.png-c6a0309bf6764348af6a32a030cdb71d.ctex"
+path="res://.godot/imported/AllTools XL- SnowHex.png-104e8c2a70e46aacdcf12ee2f2af7651.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprite/All tools mini-pack by SnowHex/AllTools XL- SnowHex.png"
-dest_files=["res://.godot/imported/AllTools XL- SnowHex.png-c6a0309bf6764348af6a32a030cdb71d.ctex"]
+source_file="res://assets/sprite/tools/AllTools XL- SnowHex.png"
+dest_files=["res://.godot/imported/AllTools XL- SnowHex.png-104e8c2a70e46aacdcf12ee2f2af7651.ctex"]
 
 [params]
 

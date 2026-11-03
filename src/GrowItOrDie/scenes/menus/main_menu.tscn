@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://2re8dp2jhl5f"]
+
+[ext_resource type="Script" uid="uid://c00olyb30ia5q" path="res://scripts/menus/main_menu.gd" id="1_ovrgc"]
+[ext_resource type="Texture2D" uid="uid://do8q07m884ern" path="res://assets/sprite/menus/Cavebound Adventurer_ Racing Against Time.png" id="1_xqga4"]
+[ext_resource type="LabelSettings" uid="uid://kf2bjjs8nmd" path="res://ressources/labels/Title_label.tres" id="3_2o76q"]
+
+[node name="MainMenu" type="Control" unique_id=502064751]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ovrgc")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1553869617]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xqga4")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1327048396]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1874402622]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Titre" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1512344157]
+layout_mode = 2
+text = "Grow It Or Die"
+label_settings = ExtResource("3_2o76q")
+
+[node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=876467708]
+unique_name_in_owner = true
+layout_mode = 2
+focus_neighbor_top = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../OptionsButton")
+text = "Start"
+
+[node name="OptionsButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=194929018]
+unique_name_in_owner = true
+layout_mode = 2
+focus_neighbor_top = NodePath("../StartButton")
+focus_neighbor_bottom = NodePath("../QuitButton")
+text = "Options"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=776278441]
+unique_name_in_owner = true
+layout_mode = 2
+focus_neighbor_top = NodePath("../OptionsButton")
+focus_neighbor_bottom = NodePath("../StartButton")
+text = "Quitter"

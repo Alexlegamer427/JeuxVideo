@@ -1,0 +1,6 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://kf2bjjs8nmd"]
+
+[ext_resource type="FontFile" uid="uid://clwg7hhqfv61c" path="res://assets/font/Fraunces/static/Fraunces_72pt_SuperSoft-Light.ttf" id="1_64u0w"]
+
+[resource]
+font = ExtResource("1_64u0w")
