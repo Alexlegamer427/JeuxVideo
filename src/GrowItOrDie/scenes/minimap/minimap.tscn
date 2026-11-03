@@ -1,39 +1,67 @@
 [gd_scene format=3 uid="uid://ynxa866wfqk2"]
 
 [ext_resource type="Script" uid="uid://dow5ixmh2lb31" path="res://scripts/minimap/minimap_container.gd" id="1_mjkw1"]
+[ext_resource type="TileSet" uid="uid://camw71ewfbowu" path="res://assets/caveTileSet.tres" id="2_q3ffp"]
+[ext_resource type="Texture2D" uid="uid://dyc6ilmmygrt4" path="res://assets/sprite/minimap/minimap_frame_background.png" id="2_wbvfe"]
+[ext_resource type="Texture2D" uid="uid://dwfj63gh8016t" path="res://assets/sprite/minimap/minimap_frame.png" id="3_4muw1"]
+[ext_resource type="Texture2D" uid="uid://1b2xsqiotijn" path="res://assets/sprite/player/farmer_chibi.png" id="4_oyx0k"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wbvfe"]
+texture = ExtResource("2_wbvfe")
 
 [node name="MinimapContainer" type="CanvasLayer" unique_id=2126477531]
+layer = 2
 script = ExtResource("1_mjkw1")
 
 [node name="MinimapPanel" type="PanelContainer" parent="." unique_id=1908467492]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -252.0
-offset_top = 19.0
-offset_right = 260.0
-offset_bottom = 531.0
+clip_children = 1
+visibility_layer = 2
+anchors_preset = -1
+anchor_left = 0.001
+anchor_top = 0.002
+anchor_right = 0.78200006
+anchor_bottom = 0.27100003
+offset_left = 943.8481
+offset_top = 13.704
+offset_right = 486.35834
+offset_bottom = 254.47011
 grow_horizontal = 0
 scale = Vector2(0.43322608, 0.4234428)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wbvfe")
 
 [node name="MinimapContainer" type="SubViewportContainer" parent="MinimapPanel" unique_id=1594624814]
+visibility_layer = 2
 layout_mode = 2
 stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="MinimapPanel/MinimapContainer" unique_id=1064791131]
 unique_name_in_owner = true
 handle_input_locally = false
+canvas_cull_mask = 4294967294
+size = Vector2i(442, 415)
 render_target_update_mode = 4
 
 [node name="Minimap" type="Node2D" parent="MinimapPanel/MinimapContainer/SubViewport" unique_id=682351470]
+visibility_layer = 2
 
 [node name="MinimapTile" type="TileMapLayer" parent="MinimapPanel/MinimapContainer/SubViewport/Minimap" unique_id=1908434798]
 unique_name_in_owner = true
+visibility_layer = 2
+tile_set = ExtResource("2_q3ffp")
 
 [node name="MiniCam" type="Camera2D" parent="MinimapPanel/MinimapContainer/SubViewport/Minimap" unique_id=1943364925]
 unique_name_in_owner = true
+visibility_layer = 2
+zoom = Vector2(0.8, 0.8)
+
+[node name="MiniPlayerSprite" type="Sprite2D" parent="MinimapPanel/MinimapContainer/SubViewport/Minimap" unique_id=2098763473]
+unique_name_in_owner = true
+visibility_layer = 2
+position = Vector2(8, 0)
+scale = Vector2(1.3, 1.271)
+texture = ExtResource("4_oyx0k")
 
 [node name="TextureRect" type="TextureRect" parent="MinimapPanel" unique_id=1635494581]
+visibility_layer = 2
 layout_mode = 2
-
-[node name="MiniPlayerSprite" type="Sprite2D" parent="MinimapPanel" unique_id=2098763473]
+texture = ExtResource("3_4muw1")
