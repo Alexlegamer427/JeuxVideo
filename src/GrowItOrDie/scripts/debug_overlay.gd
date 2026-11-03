@@ -7,7 +7,7 @@ const VELOCITY_SCALE := 0.3
 
 var label := Label.new()
 var canvas := Node2D.new()               
-
+var player: CharacterBody2D
 
 func _ready() -> void:
 	layer = 1000
@@ -22,6 +22,8 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("debug_toggle"):
 		visible = not visible
 
+func register_player(player_ref: CharacterBody2D) -> void:
+	player = player_ref
 
 func _process(_delta: float) -> void:
 	if visible:
@@ -41,8 +43,9 @@ func _build_text() -> String:
 		"FPS : %d" % Engine.get_frames_per_second(),
 		"Frame : %.2f ms" % (Performance.get_monitor(Performance.TIME_PROCESS) * 1000.0),
 		"RAM : %.1f Mo" % (OS.get_static_memory_usage() / MO),
-		"Objets : %d  Noeuds : %d" % [_stat(Performance.OBJECT_COUNT), _stat(Performance.OBJECT_NODE_COUNT)]
-	])
+		"Objets : %d  Noeuds : %d" % [_stat(Performance.OBJECT_COUNT), _stat(Performance.OBJECT_NODE_COUNT)],
+		"Vitesse : %s" % player.velocity 
+	])	
 	return "\n".join(lines)
 
 

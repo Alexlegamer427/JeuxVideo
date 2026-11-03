@@ -5,6 +5,9 @@ const SPEED := 90.0
 
 var facing := Vector2.DOWN   
 
+func _ready() -> void:
+	DebugOverlay.register_player(self)
+
 func get_animation_player() -> AnimationPlayer:
 	return $AnimationPlayer
 
