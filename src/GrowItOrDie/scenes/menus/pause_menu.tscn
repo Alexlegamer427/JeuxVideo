@@ -45,7 +45,7 @@ unique_name_in_owner = true
 layout_mode = 2
 focus_neighbor_top = NodePath("../ResumeButton")
 focus_neighbor_bottom = NodePath("../MainMenuButton")
-text = "Options"
+text = "Options (WIP)"
 
 [node name="MainMenuButton" type="Button" parent="Root/CenterContainer/VBoxContainer" unique_id=895986387]
 unique_name_in_owner = true

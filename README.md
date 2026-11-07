@@ -1,6 +1,7 @@
 # Grow It Or Die
 
 **Créateur :** Alexis Grenier
+
 ## Introduction
 
 Tu es en dettes et tu dois la repayer rapidement sinon tu meurt.  
@@ -10,3 +11,9 @@ Il t'offre une dernière option de repayer la dette en 3 payement en travaillant
 ## Concepts utilisés
 
 Voici les différents concepts utilisés dans le projet :
+
+- minicarte
+
+## Image du jeu
+
+![Gameplay](img/gameplay.png)
